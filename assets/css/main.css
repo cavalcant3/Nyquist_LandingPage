@@ -1712,7 +1712,7 @@ section {
 .hero {
   width: 100%;
   position: relative;
-  background: var(--color-primary);
+  background: #1667b0;
   padding: 60px 0 0 0;
 }
 
