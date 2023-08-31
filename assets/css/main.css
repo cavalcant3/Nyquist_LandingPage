@@ -1709,12 +1709,17 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
 .hero {
   width: 100%;
   position: relative;
-  background: #1667b0;
+  background-image: url('assets\img\galeria Nyquist - Copia\background.webp');
+  background-size: cover;  
+  background-position: center;  
+  background-repeat: no-repeat;  
   padding: 60px 0 0 0;
 }
+
 
 @media (min-width: 1365px) {
   .hero {
