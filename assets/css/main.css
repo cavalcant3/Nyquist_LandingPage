@@ -1351,77 +1351,87 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Our Team Section
+# Características e beneficios
 --------------------------------------------------------------*/
-.team .member {
-  text-align: center;
+.benefits .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
   background: #fff;
-  border-radius: 10px;
-  padding: 15px;
-  overflow: hidden;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
 }
 
-.team .member img {
-  border-radius: 10px;
-  overflow: hidden;
+.benefits .icon-box::before {
+  content: "";
+  position: absolute;
+  background: #f7dc73;
+  right: -60px;
+  top: -40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  z-index: -1;
 }
 
-.team .member .member-content {
-  padding: 0 20px 30px 20px;
+.benefits .icon-box:hover::before {
+  background: #ffd83d;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
 }
 
-.team .member h4 {
-  font-weight: 700;
-  margin-top: 16px;
-  margin-bottom: 2px;
-  font-size: 20px;
-}
-
-.team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 14px;
-  color: #6c757d;
-}
-
-.team .member p {
+.benefits .icon {
+  margin: 0 auto 20px auto;
   padding-top: 10px;
-  font-size: 14px;
-  font-style: italic;
-  color: #6c757d;
-}
-
-.team .member .social {
-  margin-top: 15px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.team .member .social a {
-  color: #a2a2a2;
-  transition: 0.3s;
+  display: inline-block;
+  text-align: center;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #bbbbbb;
+  width: 60px;
+  height: 60px;
+  background: #ffd83d;
+  transition: all 0.3s ease-in-out;
 }
 
-.team .member .social a:hover {
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+.benefits .icon i {
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
 }
 
-.team .member .social i {
+.benefits .title {
+  font-weight: 700;
+  margin-bottom: 15px;
   font-size: 18px;
-  margin: 0 2px;
 }
 
+.benefits .title a {
+  color: #425451;
+}
+
+.benefits .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.benefits .icon-box:hover .title a,
+.benefits .icon-box:hover .description {
+  color: #fff;
+}
+
+.benefits .icon-box:hover .icon {
+  background: #fff;
+}
+
+.benefits .icon-box:hover .icon i {
+  color: #1bbca3;
+}
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
