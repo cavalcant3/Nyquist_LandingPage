@@ -246,6 +246,16 @@ section {
   color: #060606;
 }
 
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media (max-width: 575px) {
 
   .topbar .contact-info i a,
@@ -1693,6 +1703,18 @@ section {
 .contact .info-item:hover i {
   background: #fff;
   color: var(--color-primary);
+}
+
+.contact  button[type=submit] {
+  background: var(--color-primary);
+  border: 0;
+  padding: 14px 45px;
+  color: #000000;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.contact button[type=submit]:hover {
+  background: var(--color-secondary);
 }
 
 
